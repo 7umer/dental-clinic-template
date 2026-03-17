@@ -19,10 +19,10 @@ function Navbar() {
       }
     }
 
-    document.addEventListener("click", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside)
 
     return () => {
-      document.removeEventListener("click", handleClickOutside)
+      document.removeEventListener("mousedown", handleClickOutside)
     }
 
   }, [])
@@ -33,13 +33,11 @@ function Navbar() {
 
       <h2 className="logo">BrightCare Clinic</h2>
 
-      <div
-        className="menu-toggle"
-        onClick={() => {
-          setMenuOpen(prev => !prev)
-        }}
-      >
-        {menuOpen ? "✕" : "☰"}
+      <div className="menu-toggle"onClick={(e) => {
+        e.stopPropagation()
+        setMenuOpen(prev => !prev)
+        }}>
+          {menuOpen ? "✕" : "☰"}
       </div>
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>

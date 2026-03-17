@@ -11,18 +11,18 @@ function Services() {
 
   return (
     <section id="services" className="services fade-up">
+      
+        <h2>Our Dental Services</h2>
 
-      <h2>Our Dental Services</h2>
-
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-            <h3>{service}</h3>
-            <p>Advanced dental care using modern equipment and painless treatment.</p>
-          </div>
-        ))}
-      </div>
-
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
+              <h3>{service}</h3>
+              <p>Advanced dental care using modern equipment and painless treatment.</p>
+            </div>
+          ))}
+        </div>
+      
     </section>
   )
 }

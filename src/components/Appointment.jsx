@@ -1,27 +1,27 @@
 function Appointment() {
   return (
     <section id="appointment" className="appointment fade-up">
+      
+        <h2>Book Appointment</h2>
 
-      <h2>Book Appointment</h2>
+        <form>
 
-      <form>
+          <input type="text" placeholder="Your Name" />
 
-        <input type="text" placeholder="Your Name" />
+          <input type="tel" placeholder="Phone Number" />
 
-        <input type="tel" placeholder="Phone Number" />
+          <select>
+            <option>Select Service</option>
+            <option>Consultation</option>
+            <option>Health Checkup</option>
+          </select>
 
-        <select>
-          <option>Select Service</option>
-          <option>Consultation</option>
-          <option>Health Checkup</option>
-        </select>
+          <textarea placeholder="Message"></textarea>
 
-        <textarea placeholder="Message"></textarea>
+          <button className="btn">Submit</button>
 
-        <button className="btn">Submit</button>
-
-      </form>
-
+        </form>
+      
     </section>
   )
 }

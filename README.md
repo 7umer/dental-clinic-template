@@ -1,12 +1,11 @@
-# Clinic Website Template
+# BrightCare Clinic
 
-A modern clinic website built using **React + Vite**.
-This template can be customized for different medical clinics such as dental, physiotherapy, pediatric, or skin clinics.
+A modern dental clinic website for **BrightCare Clinic**, built using **React + Vite**.
 
 ## Features
 
-* Modern responsive design
-* Sticky navigation bar
+* Modern, premium responsive design
+* Glassmorphism sticky navigation bar with animated mobile menu
 * Services section
 * Doctors section
 * Patient testimonials
@@ -31,13 +30,13 @@ This project can be deployed easily on **Vercel**.
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/clinic-template.git
+git clone https://github.com/7umer/dental-clinic-template.git
 ```
 
 Move into the project folder:
 
 ```bash
-cd clinic-template
+cd dental-clinic-template
 ```
 
 Install dependencies:

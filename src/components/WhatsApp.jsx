@@ -1,22 +1,20 @@
 function WhatsApp() {
 
-    return (
+  return (
 
+    <a
+      href="https://wa.me/919035477754?text=Hello%20Doctor%20I%20want%20to%20book%20an%20appointment"
+      className="whatsapp-float"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.86 9.86 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2Zm5.8 14.02c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.3-1.63-.6-2.87-1.24-4.74-4.13-4.88-4.32-.14-.19-1.17-1.56-1.17-2.98s.75-2.11 1.02-2.4c.27-.28.58-.35.78-.35h.55c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.32-.3.49-.15.17-.31.38-.44.5-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.12.99 2.06 1.3 2.35 1.44.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.15.48.22.55.34.07.13.07.72-.17 1.4Z" />
+      </svg>
+    </a>
 
-        <a
-            href="https://wa.me/919035477754?text=Hello%20Doctor%20I%20want%20to%20book%20an%20appointment"
-            className="whatsapp-float"
-            target="_blank"
-        >
-
-            <img
-                src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
-                alt="whatsapp"
-            />
-
-        </a>
-
-    )
+  )
 
 }
 

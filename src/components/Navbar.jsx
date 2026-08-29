@@ -31,13 +31,29 @@ function Navbar() {
 
     <nav className="navbar" ref={navRef}>
 
-      <h2 className="logo">BrightCare Clinic</h2>
+      <a href="#home" className="logo" onClick={closeMenu}>
+        <span className="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 2C9 2 6.5 4 6 7c-.5 3 .5 5 1 8 .3 2 .8 5 2 5s1.5-3 1.5-5 .5-3 1.5-3 1.5 1 1.5 3 .3 5 1.5 5 1.7-3 2-5c.5-3 1.5-5 1-8-.5-3-3-5-6-5Z" />
+          </svg>
+        </span>
+        BrightCare Clinic
+      </a>
 
-      <div className="menu-toggle"onClick={(e) => {
-        e.stopPropagation()
-        setMenuOpen(prev => !prev)
-        }}>
-          {menuOpen ? "✕" : "☰"}
+      <div
+        className={menuOpen ? "menu-toggle open" : "menu-toggle"}
+        onClick={(e) => {
+          e.stopPropagation()
+          setMenuOpen(prev => !prev)
+        }}
+        role="button"
+        aria-label="Toggle navigation menu"
+      >
+        <span className="bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </div>
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
@@ -51,7 +67,7 @@ function Navbar() {
 
         <li className="mobile-btn">
           <a href="#appointment" onClick={closeMenu}>
-            <button className="btn">Book Appointment</button>
+            <button className="btn btn-block">Book Appointment</button>
           </a>
         </li>
 

@@ -20,13 +20,16 @@ function App() {
       entries.forEach((entry)=>{
         if(entry.isIntersecting){
           entry.target.classList.add("show")
+          observer.unobserve(entry.target)
         }
       })
-    })
+    }, { threshold: 0.15 })
 
     const hiddenElements = document.querySelectorAll(".fade-up")
 
     hiddenElements.forEach((el)=>observer.observe(el))
+
+    return () => observer.disconnect()
 
   }, [])
 

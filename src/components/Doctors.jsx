@@ -13,7 +13,7 @@ function Doctors() {
       role: "Cosmetic Dentist",
       exp: "BDS, MDS · 8+ Years Experience",
       tags: ["Whitening", "Veneers"],
-      photo: "https://images.unsplash.com/photo-1683348758606-860c720fda9a?w=500&h=600&auto=format&fit=crop&crop=faces&q=80",
+      photo: "https://images.unsplash.com/photo-1741707039536-113e200f9e0d?w=500&h=600&auto=format&fit=crop&crop=faces&q=80",
     },
     {
       name: "Dr. Karan Mehta",
